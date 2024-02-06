@@ -27,9 +27,9 @@ git push origin main
  Pelo acesso remoto:
  OK abrir o terminal
  OK criar a pasta codigo e dentro dela clonar o seu repositório fundamentos
- entre na pasta fundamentos e abra o vscode
- no vscode edite o arquivo readme com as informações que julgar necessárias e realize um commit .
- criar ambiente virtual (conda)
- Criar Google Colab (deixar o compartilhamento para "qualque pessoa com link - leitor") e salver uma cópia no github (arquivo>>"salvar uma copia no github")
- Indicar três fontes de dados que considere importante para sua pesquisa
+ OK entre na pasta fundamentos e abra o vscode
+ OK no vscode edite o arquivo readme com as informações que julgar necessárias e realize um commit .
+NÃO CONSEGUI criar ambiente virtual (conda)
+OK Criar Google Colab (deixar o compartilhamento para "qualque pessoa com link - leitor") e salver uma cópia no github (arquivo>>"salvar uma copia no github")
+ OK Indicar três fontes de dados que considere importante para sua pesquisa
  criar Github Profile
