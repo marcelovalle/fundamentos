@@ -32,4 +32,16 @@ git push origin main
 NÃO CONSEGUI criar ambiente virtual (conda)
 OK Criar Google Colab (deixar o compartilhamento para "qualque pessoa com link - leitor") e salver uma cópia no github (arquivo>>"salvar uma copia no github")
  OK Indicar três fontes de dados que considere importante para sua pesquisa
- criar Github Profile
+ oK criar Github Profile
+
+## Aula 02-Minicurso
+### Editor de código
+-VSCODE
+-Google Colab
+### Ambiente Virtual
+-Conda e Poetry são os dois principais softwares de gerenciamento de ambiente em python
+-Utilizaremos o conda
+
+### Configuração Inicial do Conda
+- [Configuração da primeira utilização] (https://labriunesp.org/docs/projetos/ensino/trilha-dados/ambiente/ambiente-virtual?_highlight=conda#configura%C3%A7%C3%A3o-do-conda)
+- 
