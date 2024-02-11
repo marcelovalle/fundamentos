@@ -20,6 +20,23 @@ git pull origin main
 git push origin main
 * * *
 
+##Comandos Básicos Linux
+cd
+cd..
+ls
+mkdir
+cat
+history
+rm -r 
+cp caminho_origem caminho_destino
+mv caminho_origem caminho_destino
+touch teste.txt
+
+##Editor de código 
+- VScode
+-Google Colab
+
+
 
  OK Ter o acesso remoto ativo (caso não tenha avise no classroom) 
  OK Criar um repositório no github chamado fundamentos
@@ -27,12 +44,21 @@ git push origin main
  Pelo acesso remoto:
  OK abrir o terminal
  OK criar a pasta codigo e dentro dela clonar o seu repositório fundamentos
+<<<<<<< HEAD
  OK entre na pasta fundamentos e abra o vscode
  OK no vscode edite o arquivo readme com as informações que julgar necessárias e realize um commit .
 NÃO CONSEGUI criar ambiente virtual (conda)
 OK Criar Google Colab (deixar o compartilhamento para "qualque pessoa com link - leitor") e salver uma cópia no github (arquivo>>"salvar uma copia no github")
  OK Indicar três fontes de dados que considere importante para sua pesquisa
  oK criar Github Profile
+=======
+OK  entre na pasta fundamentos e abra o vscode
+(TIPO ASSIM?) no vscode edite o arquivo readme com as informações que julgar necessárias e realize um commit .
+ criar ambiente virtual (conda)
+ Criar Google Colab (deixar o compartilhamento para "qualque pessoa com link - leitor") e salver uma cópia no github (arquivo>>"salvar uma copia no github")
+ Indicar três fontes de dados que considere importante para sua pesquisa
+ criar Github Profile
+>>>>>>> eaeb5a2 (tentanto abrir o conda)
 
 ## Aula 02-Minicurso
 ### Editor de código
@@ -44,4 +70,9 @@ OK Criar Google Colab (deixar o compartilhamento para "qualque pessoa com link -
 
 ### Configuração Inicial do Conda
 - [Configuração da primeira utilização] (https://labriunesp.org/docs/projetos/ensino/trilha-dados/ambiente/ambiente-virtual?_highlight=conda#configura%C3%A7%C3%A3o-do-conda)
+<<<<<<< HEAD
 - 
+=======
+-git pull origin main & conda activate <fundamentos>
+- conda env update --prune
+>>>>>>> eaeb5a2 (tentanto abrir o conda)
