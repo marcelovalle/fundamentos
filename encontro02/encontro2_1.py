@@ -14,7 +14,7 @@ def acessar_pagina(link):
 def extrair_informações():
     link = "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa"
     pagina= acessar_pagina(link)
-    notas_imprensa = pagina.find_all("div", atrrs=("id":"content-core")).find_all("article")
+    notas_imprensa = pagina.find("div", atrrs={"id":"content-core"}).find_all("article")
     print(notas_imprensa)
 
 def main(): 
@@ -22,3 +22,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
