@@ -95,3 +95,4 @@ dependencies:
  git add. 
  git commit -m "configuração conda"
  git pull origin main
+ 
