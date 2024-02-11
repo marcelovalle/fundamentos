@@ -16,6 +16,10 @@ def extrair_informações():
     pagina= acessar_pagina(link)
     notas_imprensa = pagina.find("div", atrrs={"id":"content-core"}).find_all("article")
     print(notas_imprensa)
+    for nota_imprensa in notas_imprensa
+    titulo = nota_imprensa.find("h2").text.strip()
+    print(titulo)
+    print("###")
 
 def main(): 
     pass
