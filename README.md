@@ -92,3 +92,6 @@ dependencies:
  - Primeiro precisa estar dentro ambiente
  - Segundo: Rodar ocomando abaixo 
  conda env update --prune
+ git add. 
+ git commit -m "configuração conda"
+ git pull origin main
