@@ -44,21 +44,12 @@ touch teste.txt
  Pelo acesso remoto:
  OK abrir o terminal
  OK criar a pasta codigo e dentro dela clonar o seu repositório fundamentos
-<<<<<<< HEAD
- OK entre na pasta fundamentos e abra o vscode
- OK no vscode edite o arquivo readme com as informações que julgar necessárias e realize um commit .
-NÃO CONSEGUI criar ambiente virtual (conda)
-OK Criar Google Colab (deixar o compartilhamento para "qualque pessoa com link - leitor") e salver uma cópia no github (arquivo>>"salvar uma copia no github")
- OK Indicar três fontes de dados que considere importante para sua pesquisa
- oK criar Github Profile
-=======
 OK  entre na pasta fundamentos e abra o vscode
 (TIPO ASSIM?) no vscode edite o arquivo readme com as informações que julgar necessárias e realize um commit .
  criar ambiente virtual (conda)
  Criar Google Colab (deixar o compartilhamento para "qualque pessoa com link - leitor") e salver uma cópia no github (arquivo>>"salvar uma copia no github")
  Indicar três fontes de dados que considere importante para sua pesquisa
  criar Github Profile
->>>>>>> eaeb5a2 (tentanto abrir o conda)
 
 ## Aula 02-Minicurso
 ### Editor de código
@@ -69,10 +60,8 @@ OK  entre na pasta fundamentos e abra o vscode
 -Utilizaremos o conda
 
 ### Configuração Inicial do Conda
-- [Configuração da primeira utilização] (https://labriunesp.org/docs/projetos/ensino/trilha-dados/ambiente/ambiente-virtual?_highlight=conda#configura%C3%A7%C3%A3o-do-conda)
-<<<<<<< HEAD
-- 
-=======
+- [Configuração da primeira utilização](https://labriunesp.org/docs/projetos/ensino/trilha-dados/ambiente/ambiente-virtual?_highlight=conda#configura%C3%A7%C3%A3o-do-conda)
 -git pull origin main & conda activate <fundamentos>
 - conda env update --prune
->>>>>>> eaeb5a2 (tentanto abrir o conda)
+- git add/rm <conflicted_files>
+- git rebase --continue
