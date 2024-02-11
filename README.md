@@ -65,3 +65,30 @@ OK  entre na pasta fundamentos e abra o vscode
 - conda env update --prune
 - git add/rm <conflicted_files>
 - git rebase --continue
+
+conda config --set pip_interop_enabled True
+conda config --set env_prompt '({name})'
+conda config --add envs_dirs ./env 
+
+### Criar ambiente Virtual Conda
+cond env create -f env.yml
+name: env_fundamentos_ambiente_virtual
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - beautifulsoup4
+  - requests
+  - geckodriver
+  - selenium
+  - pandas
+  - matplotlib
+
+  ### Para ativar um ambiente virtual
+  conda activate nome_ambiente [no meu caso, env_fundamento_ambiente_virtual]
+
+  ### Atualizar bibliotecas do ambiente
+ - Primeiro precisa estar dentro ambiente
+ - Segundo: Rodar ocomando abaixo 
+ conda env update --prune
