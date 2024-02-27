@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-from pandas import pyarrow
 
 def acessar_pagina(link):
     """
@@ -31,6 +30,7 @@ def extrair_informações():
 
         titulo = nota.h2.text.strip()
         link = nota.a["href"]
+        numero = nota.finda("span", attrs=("class":"subtitle")).text.strip()
         print(titulo)
         print("###")
     print("fim do loop for")
