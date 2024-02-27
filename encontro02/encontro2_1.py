@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-import pandas as pd
+from pandas import pyarrow
 
 def acessar_pagina(link):
     """
@@ -16,10 +16,11 @@ def extrair_informações():
     pagina= acessar_pagina(link)
     notas_imprensa = pagina.find("div", atrrs={"id":"content-core"}).find_all("article")
     print(notas_imprensa)
-    for nota_imprensa in notas_imprensa
-    titulo = nota_imprensa.find("h2").text.strip()
-    print(titulo)
-    print("###")
+    for nota_imprensa in notas_imprensa:
+        titulo = nota_imprensa.find("h2").text.strip()
+        print(titulo)
+        print("###")
+    print("fim do loop for")
 
 def main(): 
     pass
