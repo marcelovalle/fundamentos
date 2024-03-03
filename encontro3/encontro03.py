@@ -30,8 +30,10 @@ def extrair_informações():
 
         titulo = nota.h2.text.strip()
         link = nota.a["href"]
-        numero = nota.finda("span", attrs=("class":"subtitle")).text.strip()
+        numero = nota.find("span", attrs={"class":"subtitle"}).text.strip().split()[-1]
+        data - nota.find("i", attrs={"class":"icon-dayy"})
         print(titulo)
+        print(f"Número da nota é: {numero}")
         print("###")
     print("fim do loop for")
 
