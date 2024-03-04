@@ -5,10 +5,16 @@ def acessar_pagina(link):
     """
     Responsável por acessar as páginas web
     """
-    pagina=requests.get(link)
+    pagina = requests.get(link)
     bs = BeautifulSoup(pagina.text, 'html.parser')
     print(bs)
     return bs
+
+#TODO: extrair as informaçõe: numero da nota, titulo, link, data, horario
+#TODO: percorrer todas as páginas 
+#TODO: extrair o conteudo (parágrafos) de cada link
+#TODO: inserir as informações em um arquivo JSON
+#TODO: webscraping com selenium
 
 def extrair_informações():
     link = "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa"
@@ -16,17 +22,13 @@ def extrair_informações():
     #find (encontra um elemento ou delimitar um pedaço da pagina)
     #find_all (encontra uma lista de elementos)
     lista_notas = pagina.find("div", atrrs={"id":"content-core"}).find_all("article")
-    print(lista_notas)
+    print(len(lista_notas))
     for nota in lista_notas:
         #titulo
-        #numero_nota
+        #numero_nota (só numero)
         #link
         #data
         #horario
-        #percorrer todas as páginas
-        #extrair o conteudo de cada link (paragrafo)
-        #inserir as informações em um arquivo json
-        #webscraping com selenium
 
         titulo = nota.h2.text.strip()
         link = nota.a["href"]
