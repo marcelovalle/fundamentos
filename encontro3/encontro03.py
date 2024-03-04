@@ -6,7 +6,7 @@ def acessar_pagina(link):
     Responsável por acessar as páginas web
     """
     pagina = requests.get(link)
-    bs = BeautifulSoup(pagina.text, 'html.parser')
+    bs = BeautifulSoup(pagina.text, "html.parser")
     return bs
 
 #TODO: extrair as informaçõe: numero da nota, titulo, link, data, horario
