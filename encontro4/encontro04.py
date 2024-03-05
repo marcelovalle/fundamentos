@@ -19,12 +19,14 @@ def acessar_pagina(link):
 
 def extrair_infos(percorre_paginas):
     for link in percorre_paginas:
+        bs = acessar_pagina (link)
+        notas_imprensa = bs.find("div", attrs={"id": "content-core"}).find_all("article")
         for nota_imprensa in notas_imprensa: 
             titulo = nota_imprensa.find('h2').text.strip()
             link = nota_imprensa.a["href"]
             tag_spam_data_horario = nota_imprensa.find_all ("span", attrs={"class":"summary-view-icon"})
             horario = tag_spam_data_horario[1].text.strip()
-            numero_nota = nota_imprensa.find("span", attrs={"class":"subtitle"}).text.strip().split(" ")[-1]
+            numero_nota = nota_imprensa.find_all("span", attrs={"class":"subtitle"}).text.strip().split(" ")[-1]
             try: 
                 numero_nota = nota.find("span", attrs={"class":"subtitle"}).text.strip().split()[-1]
             except AttributeError as erro:
@@ -56,7 +58,6 @@ def extrair_infos(percorre_paginas):
 
 def percorrer_paginas(url_base):
     listas_de_links = []
-    url_base = "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/notas-a-imprensa?b_start:int="
     contador = 5010
     while contador>=0:
         link = url_base + str(contador)
@@ -66,7 +67,8 @@ def percorrer_paginas(url_base):
     return listas_de_links
 
 def main(): 
-    percorre_paginas = percorrer_paginas
+    url_base = "https://www.gov.br/mre/pt-br/canais_atendimento/imprensa/notas-a-imprensa/notas-a-imprensa?b_start:int="
+    listas_de_links = percorrer_paginas(url_base)
     extrair_infos(listas_de_links)
     #coletar_dados = extrair_infos()
 
